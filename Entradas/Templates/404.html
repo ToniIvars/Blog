@@ -3,20 +3,19 @@
 <html>
     <head>
         <style>
-            body{ background-color: #ffeee6; }
+            body{
+                background-color: #ffeee6;
+
+            }
             h1{ color: #ff9900; }
             a{ color: black; }
             a:hover{ color: #ff9900; }
-            img{ width: 500px; height: 500px;}
+            img{ width: 400px; height: 300px;}
         </style>
     </head>
     <body>
-        <span>
-            <div>
-                <h1>La URL que has introducido no corresponde a este blog.</h1>
-                <a href="{% url 'inicio' %}">Ir al inicio de este blog</a>
-            </div>
-            <img src="{% static 'imagenes/logo.svg' %}" alt="Logo">
-        </span>
+        <img src="{% static 'imagenes/logo.svg' %}" alt="Logo">
+        <h1>La URL que has introducido no corresponde a este blog.</h1>
+        <a href="{% url 'inicio' %}">Ir al inicio de este blog</a>
     </body>
 </html>
