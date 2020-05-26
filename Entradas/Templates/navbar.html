@@ -1,0 +1,33 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{% static 'css/nav-style.css' %}"/>
+</head>
+<body>
+    <nav>
+        <a href="{% url 'inicio' %}"><img src="{% static 'imagenes/logo.svg' %}" alt="Logo del Blog" title="Inicio" id="logo"/></a>
+
+        <span id="busqueda-entradas">
+            <form action="/resultados/" method="GET">
+                <input type="text" name="input-ent" id="buscar" size="60" placeholder="Buscar entradas..." required>
+                <input type="image" src="{% static 'imagenes/lupa.svg' %}" id="img-bus">
+            </form>
+        </span>
+
+        {% if user.username == '' %}
+            <span id="usuario-anon">
+                <a href="{% url 'iniciar-sesion' %}">Iniciar Sesión</a>
+                <a href="{% url 'registro' %}">Regístrate</a>
+            </span>
+        {% else %}
+            <span id="usuario">
+                <a href="{% url 'perfil' user %}"><img src="{% static 'imagenes/user-face.svg' %}" alt="Usuario" id="user-img"></a>
+                <a href="{% url 'perfil' user %}" id="username">{{user}}</a>
+                <a href="{% url 'cerrar-sesion' %}"><img src="{% static 'imagenes/exit.svg' %}" alt="Salir" id="exit-img" title="Cerrar sesión"></a>
+            </span>
+        {% endif %}
+    </nav>
+</body>
+</html>

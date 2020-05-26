@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} El Blog Libre - Editar contraseña {% endblock %}</title>
+</head>
+<body>
+    {% block content %}
+        <form action="" method="POST" id="form-act-contra">{% csrf_token %}
+            <span class="usuario-perfil">
+                <img src="{% static 'imagenes/user-face.svg' %}" alt="Usuario" class="user-face">
+                {{user}}
+            </span>
+
+            <input type="password" name="input-contra" placeholder="Introduce la nueva contraseña" size="30" required>
+            <input type="password" name="input-contra2" placeholder="Confirma la nueva contraseña" size="30" required>
+
+            <input type="submit" value="Actualizar contraseña" name="actualizar" class="boton-formulario">
+        </form>        
+    {% endblock %}
+</body>
+</html>

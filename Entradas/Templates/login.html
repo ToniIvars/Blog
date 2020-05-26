@@ -1,0 +1,36 @@
+{% extends 'base-users.html' %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} El Blog Libre - Iniciar Sesión {% endblock %}</title>
+</head>
+<body>
+    {% block content %}        
+        <h2 class="form-title">Inicia Sesión</h2>
+
+        {% if form.errors %}
+            <p style="color: red; list-style: none;">Revisa el campo marcado</p>
+        {% endif %}
+
+        <form action="" method="POST">{% csrf_token %}
+            <span class="form">
+                <div class="imgs">
+                    <img src="{% static 'imagenes/user.svg' %}" alt="Ususario" class="icons" id="first-icon">
+                    <img src="{% static 'imagenes/pass.svg' %}" alt="Contraseña" class="icons">
+                </div>
+                <div>
+                    {{form.as_p}}
+                </div>
+            </span>
+
+            <input type="submit" value="Iniciar sesión" class="boton-formulario">
+            <p class="enlaces">¿Todavía no te has registrado? <a href="{% url 'registro' %}">Regístarte ahora.</a></p>
+            <p class="enlaces" id="sin-login"><a href="{% url 'inicio' %}">Continuar sin iniciar sesión.</a></p>
+        </form>
+    {% endblock %}
+</body>
+</html>

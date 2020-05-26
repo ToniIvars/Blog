@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load markup_tags %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} El Blog Libre - Buscar entradas {% endblock %}</title>
+</head>
+<body>
+    {% block content %}
+        {% if entradas %}
+            <section style="min-width: 1100px;">
+                {% if entradas|length == 1 %}
+                    <h2>Se ha encontrado 1 entrada.</h2>
+                {% else %}
+                    <h2>Se han encontrado {{entradas|length}} entradas.</h2>
+                {% endif %}
+
+                {% for entrada in entradas %}
+                <article class="preview-entradas">
+                    <a href="{% url 'entrada' entrada.slug %}" class="titulo-preview">{{entrada.titulo}}</a>
+                    <p class="escritor">Escrito por: {{entrada.creador}}</p>
+                    {{entrada.cuerpo|apply_markup:"markdown"|slice:'180' }}...<hr>
+                </article>
+                {% endfor %}
+            </section>
+        {% endif %}
+    {% endblock %}
+</body>
+</html>

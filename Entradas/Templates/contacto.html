@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} El Blog Libre - Contacto {% endblock %}</title>
+</head>
+<body>
+    {% block content %}        
+        <h2 class="titulos-naranjas">Contacta con el creador del blog</h2>
+
+        {% if form.errors %}
+            <p style="color: red; list-style: none;">Revisa el campo marcado</p>
+        {% endif %}
+
+        <form action="" method="POST">{% csrf_token %}
+            <table>
+                {{form.as_table}}
+            </table>
+
+            <input type="submit" value="Enviar" class="boton-formulario">
+        </form>
+    {% endblock %}
+</body>
+</html>

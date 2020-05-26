@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load markup_tags %}
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} BL - {{entrada_a_mostrar.titulo}} {% endblock %}</title>
+</head>
+<body>
+    {% block content %}
+        <article class="entrada">
+            <h1 class="titulo-entradas">{{entrada_a_mostrar.titulo}}</h1>
+            <p class="escritor">Escrito por: <a href="{% url 'ver-perfil' entrada_a_mostrar.creador %}" id="link-escritor">{{entrada_a_mostrar.creador}}</a></p>
+            {{ entrada_a_mostrar.cuerpo|apply_markup:"markdown" }}
+        </article>
+
+            <span class="titulo-com">
+                <img src="{% static 'imagenes/comentario.svg' %}" alt="Comentarios" class="imagen-titulo">
+                <h2>Comentarios</h2>
+            </span>
+
+            {% if comentarios %}
+                {% for comentario in comentarios %}
+                    <section class="comentario">
+                        <img src="{% static 'imagenes/user-face.svg' %}" alt="Usuario" class="imagen-comentario">
+                        <div>
+                            <span class="autor-comentario">
+                                Comentario de: 
+                                <a href="{% url 'ver-perfil' comentario.autor %}">{{comentario.autor}}</a>
+                            </span>
+                            <div class="cuerpo-comentario">{{comentario.cuerpo|apply_markup:"markdown"}}</div>
+                        </div>
+                    </section>
+                {% endfor %}
+            {% else %}
+                <h4>No hay comentarios por el momento.</h4>
+            {% endif %}
+
+            {% if user.username == '' %}
+                <span class="titulo-com">
+                    <img src="{% static 'imagenes/editar.svg' %}" alt="Comentarios" class="imagen-titulo">
+                    <h2>Regístrate para escribir comentarios</h2>
+                </span>
+
+            {% else %}
+                <span class="titulo-com">
+                    <img src="{% static 'imagenes/editar.svg' %}" alt="Comentarios" class="imagen-titulo">
+                    <h2>Escribe tu propio comentario</h2>
+                </span>
+
+                <form action="" method="POST" id="comment-form">{% csrf_token %}
+                    <input type="text" name="input-autor" value="{{user}}" size="30" readonly>
+                    <input type="submit" value="Comentar" class="mini-boton-formulario">
+                </form>
+                <textarea name="input-comentario" form="comment-form" class="com-area" rows="20" placeholder="Escribe el comentario aquí..." required></textarea>
+            {% endif %}
+    {% endblock %}
+</body>
+</html>

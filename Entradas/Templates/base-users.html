@@ -1,0 +1,38 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} {% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/users-style.css' %}">
+    <link rel="shortcut icon" href="{% static 'imagenes/favicon.ico' %}" type="image/x-icon"/>
+</head>
+<body>
+    <div id="cont-centro">
+        <img src="{% static 'imagenes/logo.svg' %}" alt="Logo del Blog" id="logo"/>
+        <div id="centro">
+
+            {% if messages %}
+                {% for message in messages %}
+                    <span class="mensajes" id="{{message.tags}}">
+                        
+                        {% if message.tags == "success" %}
+                        <img src="{% static 'imagenes/success.svg' %}" alt="{{message.tags}}" class="img-mens"/>
+                        {% else %}
+                        <img src="{% static 'imagenes/error.svg' %}" alt="{{message.tags}}" class="img-mens"/>
+                        {% endif %}
+
+                        {{message}}
+                    </span>
+                {% endfor %}
+            {% endif %}
+
+            {% block content %}
+
+            {% endblock %}
+        </div>
+    </div>
+</body>
+</html>

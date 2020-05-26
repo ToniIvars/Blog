@@ -1,0 +1,81 @@
+body{
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    background-color: white;
+    border-bottom: solid 5px #ff9900;
+}
+
+/* Logo */
+#logo{
+    width: 200px;
+    height: 90px;
+    /* margin: 10px 0 10px 30px; */
+    margin: 10px 0;
+    position: relative;
+    top: 4px;
+}
+
+/* Barra búsqueda */
+#buscar{
+    margin-left: 10px;
+    font-size: 20px;
+    height: 30px;
+    border: solid 2px #ff9900;
+    box-sizing: border-box;
+    padding: 5px;
+}
+#img-bus{
+    width: 36px;
+    height: 36px;
+    position: relative;
+    top: 11px; 
+}
+
+/* Parte del usuario */
+#usuario{
+    margin: 0;
+    /* margin-right: 30px; */
+    padding: 0 0 8px 10px;
+    display: flex;
+    align-items: center;
+    color: #ff9900;
+    font-size: 24px;
+    position: relative;
+    top: 9px;
+    font-weight: bold;
+}
+#user-img{
+    position: relative;
+    top: 2px;
+    width: 48px;
+    height: 48px;
+    margin-right: 8px;
+}
+#exit-img{
+    position: relative;
+    top: 4px;
+    width: 34px;
+    height: 34px;
+    margin: 0 10px;
+}
+#username{
+    text-decoration: none;
+    color: #ff9900;
+}
+#usuario-anon{
+    margin: 0;
+    font-size: 16px;
+    position: relative;
+    top: 9px;
+    font-weight: bold;
+}
+#usuario-anon a{
+    padding-right: 10px;
+    color: #ff9900;
+}

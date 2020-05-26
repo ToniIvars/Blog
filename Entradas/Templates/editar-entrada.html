@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} El Blog Libre - Editar entrada {% endblock %}</title>
+</head>
+<body>
+    {% block content %}
+        <h2 class="titulos-naranjas">Edita la entrada</h2>
+
+        {% if form.errors %}
+            <p style="color: red;">Revisa este campo</p>
+        {% endif %}
+
+        <form action="" method="POST">{% csrf_token %}
+            <table>
+                {{form.as_table}}
+            </table>
+            
+            <span>
+                <input type="submit" value="Actualizar entrada" name="actualizar" class="boton-formulario">
+                <a target="_blank" href="https://drive.google.com/file/d/1l-D5xBo6LjSoI2reopk0k1cGZwi_x3NX/view?usp=sharing" class="enlace-pdf" title="PDF Drive">
+                    Documento edición del texto.
+                </a>
+            </span>
+        </form>        
+    {% endblock %}
+</body>
+</html>

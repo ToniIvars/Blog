@@ -1,0 +1,20 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    font: bold 12px Verdana, Geneva, Tahoma, sans-serif;
+    border-top: 5px solid #ff9900;
+    height: 80px;
+}
+p{
+    padding-top: 10px;
+}
+.enlaces-pie{
+    text-decoration: none;
+    color: #ff9900;
+}

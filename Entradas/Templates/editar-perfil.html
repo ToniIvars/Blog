@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} El Blog Libre - Editar perfil {% endblock %}</title>
+</head>
+<body>
+    {% block content %}
+        <span class="usuario-perfil">
+            <img src="{% static 'imagenes/user-face.svg' %}" alt="Usuario" class="user-face">
+            Edición de {{user}}
+        </span>
+
+        {% if form.errors %}
+            <p style="color: red;">Revisa este campo</p>
+        {% endif %}
+
+        <form action="" method="POST" id="form-edit-perfil">{% csrf_token %}
+            <table>
+                {{form.as_table}}
+            </table>
+
+            <span>
+                <input type="submit" value="Actualizar perfil" name="actualizar" class="boton-formulario">
+                <a href="{% url 'actualizar-contraseña' user %}" class="link-perfil" id="mini-link-perfil">Actualiza la contraseña</a>
+            </span>
+        </form>        
+    {% endblock %}
+</body>
+</html>

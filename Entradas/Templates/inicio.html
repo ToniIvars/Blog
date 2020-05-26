@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load markup_tags %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} El Blog libre - Inicio {% endblock %}</title>
+</head>
+<body>
+    {% block content %}
+        <h2 class="titulos-naranjas">Entradas más recientes</h2>
+        <section id="cont-inicio">
+            {% for entrada in articulos %}
+            <article class="preview-entradas">
+                <a href="{% url 'entrada' entrada.slug %}" class="titulo-preview">{{entrada.titulo}}</a>
+                <p class="escritor">Escrito por: <a href="{% url 'ver-perfil' entrada.creador %}">{{entrada.creador}}</a></p>
+                {{entrada.cuerpo|apply_markup:"markdown"|slice:'200' }}...<hr>
+            </article>
+            {% endfor %}
+        </section>
+    {% endblock %}
+</body>
+</html>
