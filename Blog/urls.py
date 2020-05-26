@@ -1,12 +1,15 @@
 from django.contrib import admin
 from django.urls import path
+from django.conf.urls import handler404
 from Entradas import views
+
+handler404 = 'Entradas.views.error_404'
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.inicio, name='inicio'),
-    path('inicio/', views.inicio, name='inicio'),
-    # path('resultados/', views.resultados, name='res-busca'),
+    # path('inicio/', views.inicio, name='inicio'),
+    path('resultados/', views.resultados, name='res-busca'),
     path('crear-entrada/', views.crear_entrada, name='crear-entrada'),
     path('editar-entrada/<int:entrada>/', views.editar_entrada, name='editar-entrada'),
     path('eliminar-entrada/<int:entrada>/', views.eliminar_entrada, name='eliminar-entrada'),

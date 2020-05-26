@@ -41,6 +41,9 @@ def set_username(request):
 
 # Create your views here.
 
+def error_404(request):
+    return render(request, '404.html')
+
 # @login_required
 def inicio(request):
     set_username(request)

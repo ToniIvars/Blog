@@ -1,0 +1,16 @@
+{% load static %}
+
+<html>
+    <head>
+        <style>
+            body{ background-color: #ffeee6; }
+            h1{ color: #ff9900; }
+            a{ color: black; }
+            a:hover{ color: #ff9900; }
+        </style>
+    </head>
+    <body>
+        <h1>La URL que has introducido no corresponde a este blog.</h1>
+        <a href="{% url 'inicio' %}">Ir al inicio de este blog</a>
+    </body>
+</html>
