@@ -4,6 +4,7 @@ from Entradas import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('/', views.inicio),
     path('inicio/', views.inicio, name='inicio'),
     path('resultados/', views.resultados, name='res-busca'),
     path('crear-entrada/', views.crear_entrada, name='crear-entrada'),
