@@ -59,7 +59,9 @@ ROOT_URLCONF = 'Blog.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['C:/Users/Toni Ivars/Desktop/GIT/Blog/Entradas/Templates'],
+        'DIRS': [
+            os.path.join(BASE_DIR, 'Entradas/Templates'),
+            ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
