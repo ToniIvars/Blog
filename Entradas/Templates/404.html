@@ -6,16 +6,19 @@
             body{
                 background-color: #ffeee6;
                 padding-left: 20px;
+                display: inline;
             }
             h1{ color: #ff9900; }
             a{ color: black; }
             a:hover{ color: #ff9900; }
-            img{ margin: 0; width: 400px; height: auto;}
+            img{ margin: 0; width: 492px; height: 233px;}
         </style>
     </head>
     <body>
         <img src="{% static 'imagenes/logo.svg' %}" alt="Logo">
-        <h1>La URL que has introducido no corresponde a este blog.</h1>
-        <a href="{% url 'inicio' %}">Ir al inicio de este blog</a>
+        <div>
+            <h1>La URL que has introducido no corresponde a este blog.</h1>
+            <a href="{% url 'inicio' %}">Ir al inicio de este blog</a>
+        </div>
     </body>
 </html>
