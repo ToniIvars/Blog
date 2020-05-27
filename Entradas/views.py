@@ -218,34 +218,16 @@ def signup(request):
                         return redirect('registro')
 
                     else:
-                        codigo=generar_codigo()
-                        mensaje='El código de confirmación es:\n\n{}'.format(codigo)
-                        send_mail('Código confirmación El Blog Libre', mensaje, 'toniivaju@gmail.com', [email])
+                        user=User.objects.create_user(username, email, password)
+                        user.save()
+                        login(request, user)
 
-                        codigo_enviado=True
-                        return redirect('registro')
-
-    elif request.GET.get('confirmar'):
-
-        if request.GET.get('input-confirm')==codigo:
-            user=User.objects.create_user(username, email, password)
-            user.save()
-            login(request, user)
-
-            messages.success(request, 'El usuario ha sido creado correctamente.')
-            return redirect('inicio')
-        else:
-            messages.error(request, 'El código no coincidia con el mandado a tu email.')
-            return redirect('registro')
-                             
+                        messages.success(request, 'El usuario ha sido creado correctamente.')
+                        return redirect('inicio')                             
     else:
         registro=SignupForm()
 
-    if codigo_enviado:
-        codigo_enviado=False
-        return render(request, 'signup.html', {'form':registro, 'codigo':True})
-    else:
-        return render(request, 'signup.html', {'form':registro, 'codigo':False})
+    return render(request, 'signup.html', {'form':registro})
 
 def login_view(request):
     global username

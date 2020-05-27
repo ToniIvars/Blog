@@ -10,15 +10,6 @@
 </head>
 <body>
     {% block content %}
-    {% if codigo == True %}
-        <h2 class="form-title" id="mini-title">Introduce el código que has recibido por email</h2>
-
-        <form action="" method="GET">
-            <input type="text" name="input-confirm" size="6" class="user-field">
-            <input type="submit" value="Confirmar" name="confirmar" class="boton-formulario">
-        </form>
-    
-    {% else %}
         <h2 class="form-title">Regístrate ahora</h2>
 
         {% if form.errors %}
@@ -42,7 +33,6 @@
             <p class="enlaces" id="ini-ses-en">¿Ya tienes un usuario? <a href="{% url 'iniciar-sesion' %}">Inicia sesión ahora.</a></p>
             <p class="enlaces" id="sin-signup"><a href="{% url 'inicio' %}">Continuar sin registrarse.</a></p>
         </form>
-    {% endif %}
     {% endblock %}
 </body>
 </html>
