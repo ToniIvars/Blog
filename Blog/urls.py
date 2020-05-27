@@ -8,8 +8,8 @@ handler500 = 'Entradas.views.error_500'
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.inicio, name='inicio'),
-    # path('inicio/', views.inicio, name='inicio'),
+    # path('', views.inicio, name='inicio'),
+    path('inicio/', views.inicio, name='inicio'),
     path('resultados/', views.resultados, name='res-busca'),
     path('crear-entrada/', views.crear_entrada, name='crear-entrada'),
     path('editar-entrada/<int:entrada>/', views.editar_entrada, name='editar-entrada'),
