@@ -268,13 +268,13 @@ def ver_perfil(request, profile):
 
 @login_required
 def perfil(request, profile):
-    if profile == username:
-        articulos=entradas_blog.objects.filter(creador=profile).order_by('-pk')
-        return render(request, 'perfil.html', {'articulos':articulos})
+    # if profile == username:
+    articulos=entradas_blog.objects.filter(creador=profile).order_by('-pk')
+    return render(request, 'perfil.html', {'articulos':articulos})
 
-    else:
-        messages.error(request, 'El perfil al que intentas acceder no es el tuyo.')
-        return redirect('inicio')
+    # else:
+    #     messages.error(request, 'El perfil al que intentas acceder no es el tuyo.')
+    #     return redirect('inicio')
 
 @login_required
 def editar_perfil(request, profile):
