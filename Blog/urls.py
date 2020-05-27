@@ -4,7 +4,7 @@ from django.conf.urls import handler404, handler500
 from Entradas import views
 
 handler404 = 'Entradas.views.error_404'
-handler500 = 'Entradas.views.error_404'
+handler500 = 'Entradas.views.error_500'
 
 urlpatterns = [
     path('admin/', admin.site.urls),

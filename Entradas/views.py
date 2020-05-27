@@ -44,6 +44,9 @@ def set_username(request):
 def error_404(request):
     return render(request, '404.html')
 
+def error_500(request):
+    return render(request, '500.html')
+
 # @login_required
 def inicio(request):
     set_username(request)
