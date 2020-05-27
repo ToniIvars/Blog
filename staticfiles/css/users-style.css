@@ -1,0 +1,117 @@
+body{
+    margin: 0;
+    background-color: #ffeee6;
+}
+#cont-centro{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#centro{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 20px 40px;
+    margin-top: 10px;
+    background-color: white;
+    border: 2px solid #ff9900;
+
+    border-radius: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#logo{
+    display: block;
+    width: 320px;
+    height: 120px;
+    margin: 20px 0;
+}
+.form-title{
+    font-size: 36px;
+    margin: 0;
+    padding: 0;
+    margin: 10px 0;
+    color: #ff9900;
+}
+#mini-title{
+    font-size: 24px;
+}
+.imgs{
+    display: flex;
+    flex-direction: column;
+    padding-right: 10px;
+}
+#first-icon{
+    margin-top: 7.5px;
+}
+.form{
+    display: flex;
+    justify-content: center;
+}
+.icons{
+    width: 30px;
+    height: 30px;
+    padding: 0.48em 0;
+}
+.user-field{
+    font-size: 20px;
+}
+.boton-formulario{
+    margin-top: 10px;
+    margin-left: 130px;
+    width: 134px;
+    height: 42px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 7px;
+    border: 2px solid #ff9900;
+    color: #ff9900;
+}
+.enlaces{
+    margin: 0;
+    margin-top: 20px;
+}
+#ini-ses-en{
+    margin-left: 26px;
+}
+#sin-login{
+    margin-left: 80px;
+    margin-top: 10px;
+}
+#sin-signup{
+    margin-left: 100px;
+    margin-top: 10px;
+}
+a{text-decoration: none;}
+li{color: red;}
+
+
+.mensajes{
+    min-width: 360px;
+    display: flex;
+    padding: 0px 20px;
+    height: 2em;
+    border-radius: 5px;
+    border: 1px solid;
+    font-weight: bold;
+    font-size: 14px;
+}
+.img-mens{
+    width: 14px;
+    height: 14px;
+    position: relative;
+    top: 2px;
+    padding-right: 8px;
+}
+#success{
+    padding-top: 10px;
+    background-color: #dff0d8;
+    color: #70bf2b;
+    border-color: #70bf2b;
+}
+#error{
+    padding-top: 10px;
+    background-color: #ffcccc;
+    color: #d7443e;
+    border-color: #d7443e;
+}

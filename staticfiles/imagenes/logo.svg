@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="983.75964"
+   height="466.38062"
+   viewBox="0 0 260.28638 123.39652"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="logo.svg">
+  <title
+     id="title930">Logo</title>
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     lock-margins="true"
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="70.907185"
+     inkscape:cy="400.26345"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     units="px"
+     width="1122.5197px"
+     fit-margin-top="10"
+     fit-margin-left="0"
+     fit-margin-right="10"
+     fit-margin-bottom="0"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Logo</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="display:inline"
+     transform="translate(-22.060569,-42.263627)">
+    <g
+       id="g849">
+      <text
+         id="text12"
+         y="88.476173"
+         x="151.18362"
+         style="font-weight:bold;font-size:74.3431px;line-height:1.25;font-family:Verdana;-inkscape-font-specification:'Verdana Bold';letter-spacing:0.0291042px;word-spacing:3.17235px;stroke:#000000;stroke-width:3.17501;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:57.8226px;font-family:Lemon;-inkscape-font-specification:'Lemon Bold';text-align:center;letter-spacing:1.32292px;word-spacing:2.64583px;text-anchor:middle;fill:#ff9900;fill-opacity:1;stroke:#000000;stroke-width:3.17501;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+           y="88.476173"
+           x="151.18362"
+           id="tspan10"
+           sodipodi:role="line">EL BLOG</tspan><tspan
+           id="tspan14"
+           style="font-size:82.6034px;text-align:center;word-spacing:3.17235px;text-anchor:middle;fill:#ff9900;fill-opacity:1;stroke:#000000;stroke-width:3.17501;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+           y="181.40504"
+           x="151.18362"
+           sodipodi:role="line" /></text>
+      <text
+         id="text841"
+         y="161.92496"
+         x="18.69187"
+         style="font-weight:bold;font-size:82.6034px;line-height:0;font-family:Verdana;-inkscape-font-specification:'Verdana Bold';letter-spacing:1.32292px;fill:#ff9900;fill-opacity:1;stroke:#000000;stroke-width:3.17501;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:82.6034px;line-height:103.254px;font-family:Lemon;-inkscape-font-specification:'Lemon Bold';fill:#ff9900;fill-opacity:1;stroke:#000000;stroke-width:3.17501;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+           y="161.92496"
+           x="18.69187"
+           id="tspan839"
+           sodipodi:role="line">LIBRE</tspan></text>
+    </g>
+  </g>
+</svg>

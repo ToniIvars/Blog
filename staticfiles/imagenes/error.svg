@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="error.svg"
+   xml:space="preserve"
+   style="enable-background:new 0 0 368.022 368.022;"
+   viewBox="0 0 368.022 368.022"
+   y="0px"
+   x="0px"
+   id="Capa_1"
+   version="1.1"><metadata
+   id="metadata927"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
+   id="defs925" /><sodipodi:namedview
+   inkscape:current-layer="Capa_1"
+   inkscape:window-maximized="1"
+   inkscape:window-y="-8"
+   inkscape:window-x="-8"
+   inkscape:cy="184.011"
+   inkscape:cx="184.011"
+   inkscape:zoom="2.2471483"
+   showgrid="false"
+   id="namedview923"
+   inkscape:window-height="1017"
+   inkscape:window-width="1920"
+   inkscape:pageshadow="2"
+   inkscape:pageopacity="0"
+   guidetolerance="10"
+   gridtolerance="10"
+   objecttolerance="10"
+   borderopacity="1"
+   bordercolor="#666666"
+   pagecolor="#ffffff" />
+<g
+   id="g890">
+	<path
+   id="path886"
+   d="M314.101,54.133c71.79,71.847,71.744,188.287-0.103,260.077s-188.287,71.744-260.077-0.103   c-71.75-71.806-71.75-188.167,0-259.974c71.381-71.847,187.49-72.224,259.337-0.843C313.54,53.57,313.821,53.851,314.101,54.133z"
+   style="fill:#D7443E;" />
+	<polygon
+   id="polygon888"
+   points="275.439,124.663 215.88,184.223 275.439,243.782 243.57,275.651 184.011,216.092    124.452,275.651 92.582,243.782 152.142,184.223 92.582,124.663 124.452,92.794 184.011,152.353 243.57,92.794  "
+   style="fill:#D4E1F4;" />
+</g>
+<g
+   id="g892">
+</g>
+<g
+   id="g894">
+</g>
+<g
+   id="g896">
+</g>
+<g
+   id="g898">
+</g>
+<g
+   id="g900">
+</g>
+<g
+   id="g902">
+</g>
+<g
+   id="g904">
+</g>
+<g
+   id="g906">
+</g>
+<g
+   id="g908">
+</g>
+<g
+   id="g910">
+</g>
+<g
+   id="g912">
+</g>
+<g
+   id="g914">
+</g>
+<g
+   id="g916">
+</g>
+<g
+   id="g918">
+</g>
+<g
+   id="g920">
+</g>
+<path
+   id="path929"
+   d="M 89.60132,274.09261 69.774194,255.22 107.06049,219.73635 144.34679,184.25271 107.05997,148.77154 69.773154,113.29037 89.600806,94.417248 109.42846,75.54416 l 37.29133,35.4825 37.29131,35.48249 37.42802,-35.61255 37.42801,-35.612567 19.55304,18.600468 c 10.75419,10.230259 19.55305,18.841629 19.55305,19.136409 0,0.29476 -16.71725,16.44227 -37.14944,35.88336 l -37.14942,35.34743 37.28683,35.48416 37.28683,35.48414 -19.82713,18.87261 -19.82714,18.8726 -37.29132,-35.48249 -37.29133,-35.4825 -37.29131,35.4825 -37.29133,35.48249 z"
+   style="fill:#ffffff;fill-opacity:1;stroke:#cc0000;stroke-width:0.00871911" /></svg>

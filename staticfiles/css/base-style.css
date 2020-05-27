@@ -1,0 +1,255 @@
+/* base */
+body{
+    margin: 0;
+    /* background-image: radial-gradient(circle, #ffeee6 80%, white); */
+    background-color: #ffeee6;
+}
+#contenido-centro{
+    width: fit-content;
+    margin: 0;
+    margin: auto;
+    padding: 5px 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    min-height: 760px;
+}
+
+/* inicio */
+p{
+    padding: 0;
+}
+.preview-entradas{
+    width: 1200px;
+    padding: 15px 20px;
+}
+.titulo-preview{
+    font-weight: bold;
+    font-size: 24px;
+    text-decoration: none;
+    color: black;
+    padding: 0.6em 0px;
+}
+.titulo-preview:hover{
+    color: #ff9900;
+}
+.escritor{
+    text-decoration: underline;
+}
+#cont-inicio{
+    margin-top: 10px;
+}
+.titulo-entradas{
+    font-size: 48px;
+    margin: 0;
+    margin-top: 20px;
+}
+#cont-inicio a{
+    color: black;
+}
+#cont-inicio a:hover{
+    color: #ff9900;
+}
+
+/* muestra-entrada */
+.entrada{
+    width: 1200px;
+    padding: 0px 20px;
+    word-wrap: overflow-wrap;
+}
+#link-escritor{
+    color: black;
+}
+#link-escritor:hover{
+    color: #ff9900;
+}
+.comentario{
+    display: flex;
+    border: 1px solid #ff9900;
+    margin-bottom: 20px;
+    padding: 10px 0 0 10px;
+    border-radius: 10px;
+}
+.autor-comentario{
+    font-size: 12px;
+    margin-top: 20px;
+}
+.autor-comentario a{
+    color: black;
+}
+.autor-comentario a:hover{
+    color: #ff9900;
+}
+.cuerpo-comentario{
+    width: 1200px;
+    margin: 10px 0 20px 0;
+    word-wrap: overflow-wrap;
+}
+.imagen-comentario{
+    width: 48px;
+    height: 48px;
+    margin-right: 16px;
+}
+.titulo-com{
+    margin: 0;
+    margin: 40px 0 20px 4px;
+    color: #ff9900;
+}
+.titulo-com h2{
+    margin-left: 45px;
+}
+.imagen-titulo{
+    width: 32px;
+    height: 32px;
+    position: relative;
+    top: 56px;
+}
+
+/* formularios */
+textarea{
+    resize: horizontal;
+    max-width: 1600px;
+    min-height: 510px;
+}
+.com-area{
+    min-height: initial;
+    width: 1270px;
+    resize: none;
+}
+.boton-formulario{
+    margin: 20px 10px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 7px;
+    border: 2px solid #ff9900;
+    color: #ff9900;
+}
+.mini-boton-formulario{
+    margin: 5px 0px;
+    height: 25px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 7px;
+    border: 2px solid #ff9900;
+    color: #ff9900;
+}
+.titulos-naranjas{
+    font-size: 32px;
+    color: #ff9900;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ff9900;
+}
+.editar-entradas{
+    display: flex;
+    justify-content: center;
+    width: 1415px;
+    padding: 20px 0px;
+    min-height: 630px;
+}
+.mensajes{
+    display: flex;
+    margin-top: 15px;
+    padding: 0px 20px;
+    height: 2em;
+    border: 1px solid;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.img-mens{
+    width: 14px;
+    height: 14px;
+    position: relative;
+    top: 3px;
+    padding-right: 8px;
+}
+#success{
+    padding-top: 10px;
+    background-color: #dff0d8;
+    color: #70bf2b;
+    border-color: #70bf2b;
+}
+#error{
+    padding-top: 10px;
+    background-color: #ffcccc;
+    color: #d7443e;
+    border-color: #d7443e;
+}
+#encontrado{
+    min-height: initial;
+}
+.editar-eliminar{
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 5px;
+}
+#si-del{
+    margin-left: 20px;
+}
+.enlace-pdf{
+    position: relative;
+    top: 10px;
+    text-decoration: none;
+    font-size: 12x;
+}
+
+/* perfil */
+.usuario-perfil{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    color: #ff9900;
+    font-size: 42px;
+    font-weight: bold;
+    margin: 20px 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ff9900;
+    min-width: 800px;
+}
+.user-face{
+    width: 80px;
+    height: 80px;
+    margin-right: 16px;
+}
+.link-perfil{
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 30px;
+    padding-top: 18px;
+}
+.link-perfil:hover{
+    color: #ff9900;
+}
+#mini-link-perfil{
+    font-size: 14px;
+    position: relative;
+    top: 10px;
+    margin-left: 0;
+}
+
+#form-edit-perfil{
+    margin-top: 20px;
+}
+#form-edit-perfil td{
+    padding-bottom: 20px;
+}
+#form-edit-perfil table{
+    text-align: right;
+}
+#form-edit-perfil input{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#form-act-contra{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    align-items: center;
+}
+#form-act-contra input{
+    margin: 10px 0;
+    font-size: 16px;
+}
